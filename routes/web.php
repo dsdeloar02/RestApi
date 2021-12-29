@@ -35,3 +35,10 @@ $router->post('/rabbil',function(){
    return "I am Rabbil Hasan";
 
 });
+
+$router->post('/name/{name}/age/{age}/city/{city}',function($name,$age,$city){
+
+    // return "I am Rabbil Hasan";
+    return $name.$age.$city;
+ 
+ });
